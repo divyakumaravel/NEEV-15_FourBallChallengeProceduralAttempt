@@ -10,10 +10,14 @@ public class TryProcessing extends PApplet {
     int ball3 = 0;
     int ball4 = 0;
 
+    final int width = 640;
+    final int height = 480;
+    final int diameter = 15;
+
     @Override
     public void settings() {
         super.settings();
-        size(640,480);
+        size(width,height);
     }
 
     @Override
@@ -25,22 +29,22 @@ public class TryProcessing extends PApplet {
     }
 
     private void drawFirstCircle() {
-        ellipse(ball1,480/5,15,15);
+        ellipse(ball1,height/5,diameter,diameter);
         ball1++;
     }
 
     private void drawSecondCircle() {
-        ellipse(ball2,480*2/5,15,15);
+        ellipse(ball2,height*2/5,diameter,diameter);
         ball2=ball2+2;
     }
 
     private void drawThirdCircle() {
-        ellipse(ball3,480*3/5,15,15);
+        ellipse(ball3,height*3/5,diameter,diameter);
         ball3=ball3+3;
     }
 
     private void drawFourthCircle() {
-        ellipse(ball4,480*4/5,15,15);
+        ellipse(ball4,height*4/5,diameter,diameter);
         ball4=ball4+4;
     }
 }
